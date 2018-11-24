@@ -1,0 +1,30 @@
+html>body .input {
+    margin: calc(10px) auto;
+    border: none;
+    border-bottom: solid 1px #9999999f;
+}
+.form-style-10 .section{
+	font: normal 25px 'Bitter', serif;
+	color: #2A88AD;
+}
+.form-style-10 .section span {
+	background: #2A88AD;
+	position: absolute;
+	font-size: 16px;
+}
+
+.form-basic {
+    margin: 0 auto;
+    padding: 55px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+button{
+	margin:2px;
+	float:right;
+  }
+  p {
+	margin-bottom: 35px;
+} 
