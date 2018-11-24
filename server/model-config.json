@@ -35,13 +35,7 @@
     "dataSource": "db",
     "public": false
   },
-  "Clientes": {
-    "dataSource": "DataCadastro",
-    "public": true,
-    "$promise": {},
-    "$resolved": true
-  },
-  "Contato": {
+  "Todo": {
     "dataSource": "DataCadastro",
     "public": true
   }

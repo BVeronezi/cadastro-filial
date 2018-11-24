@@ -1358,13 +1358,13 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
 /**
  * @ngdoc object
- * @name lbServices.Clientes
- * @header lbServices.Clientes
+ * @name lbServices.Todo
+ * @header lbServices.Todo
  * @object
  *
  * @description
  *
- * A $resource object for interacting with the `Clientes` model.
+ * A $resource object for interacting with the `Todo` model.
  *
  * ## Example
  *
@@ -1374,19 +1374,19 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
  *
  */
   module.factory(
-    "Clientes",
+    "Todo",
     [
       'LoopBackResource', 'LoopBackAuth', '$injector', '$q',
       function(LoopBackResource, LoopBackAuth, $injector, $q) {
         var R = LoopBackResource(
-        urlBase + "/Clientes/:id",
+        urlBase + "/Todos/:id",
           { 'id': '@id' },
           {
 
             /**
              * @ngdoc method
-             * @name lbServices.Clientes#create
-             * @methodOf lbServices.Clientes
+             * @name lbServices.Todo#create
+             * @methodOf lbServices.Todo
              *
              * @description
              *
@@ -1413,18 +1413,18 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Clientes` object.)
+             * This usually means the response is a `Todo` object.)
              * </em>
              */
             "create": {
-              url: urlBase + "/Clientes",
+              url: urlBase + "/Todos",
               method: "POST",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Clientes#createMany
-             * @methodOf lbServices.Clientes
+             * @name lbServices.Todo#createMany
+             * @methodOf lbServices.Todo
              *
              * @description
              *
@@ -1451,19 +1451,19 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Clientes` object.)
+             * This usually means the response is a `Todo` object.)
              * </em>
              */
             "createMany": {
               isArray: true,
-              url: urlBase + "/Clientes",
+              url: urlBase + "/Todos",
               method: "POST",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Clientes#upsert
-             * @methodOf lbServices.Clientes
+             * @name lbServices.Todo#upsert
+             * @methodOf lbServices.Todo
              *
              * @description
              *
@@ -1490,18 +1490,18 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Clientes` object.)
+             * This usually means the response is a `Todo` object.)
              * </em>
              */
             "upsert": {
-              url: urlBase + "/Clientes",
+              url: urlBase + "/Todos",
               method: "PUT",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Clientes#replaceOrCreate
-             * @methodOf lbServices.Clientes
+             * @name lbServices.Todo#replaceOrCreate
+             * @methodOf lbServices.Todo
              *
              * @description
              *
@@ -1528,18 +1528,18 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Clientes` object.)
+             * This usually means the response is a `Todo` object.)
              * </em>
              */
             "replaceOrCreate": {
-              url: urlBase + "/Clientes/replaceOrCreate",
+              url: urlBase + "/Todos/replaceOrCreate",
               method: "POST",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Clientes#upsertWithWhere
-             * @methodOf lbServices.Clientes
+             * @name lbServices.Todo#upsertWithWhere
+             * @methodOf lbServices.Todo
              *
              * @description
              *
@@ -1565,18 +1565,18 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Clientes` object.)
+             * This usually means the response is a `Todo` object.)
              * </em>
              */
             "upsertWithWhere": {
-              url: urlBase + "/Clientes/upsertWithWhere",
+              url: urlBase + "/Todos/upsertWithWhere",
               method: "POST",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Clientes#exists
-             * @methodOf lbServices.Clientes
+             * @name lbServices.Todo#exists
+             * @methodOf lbServices.Todo
              *
              * @description
              *
@@ -1601,14 +1601,14 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *  - `exists` – `{boolean=}` -
              */
             "exists": {
-              url: urlBase + "/Clientes/:id/exists",
+              url: urlBase + "/Todos/:id/exists",
               method: "GET",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Clientes#findById
-             * @methodOf lbServices.Clientes
+             * @name lbServices.Todo#findById
+             * @methodOf lbServices.Todo
              *
              * @description
              *
@@ -1632,18 +1632,18 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Clientes` object.)
+             * This usually means the response is a `Todo` object.)
              * </em>
              */
             "findById": {
-              url: urlBase + "/Clientes/:id",
+              url: urlBase + "/Todos/:id",
               method: "GET",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Clientes#replaceById
-             * @methodOf lbServices.Clientes
+             * @name lbServices.Todo#replaceById
+             * @methodOf lbServices.Todo
              *
              * @description
              *
@@ -1669,18 +1669,18 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Clientes` object.)
+             * This usually means the response is a `Todo` object.)
              * </em>
              */
             "replaceById": {
-              url: urlBase + "/Clientes/:id/replace",
+              url: urlBase + "/Todos/:id/replace",
               method: "POST",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Clientes#find
-             * @methodOf lbServices.Clientes
+             * @name lbServices.Todo#find
+             * @methodOf lbServices.Todo
              *
              * @description
              *
@@ -1702,19 +1702,19 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Clientes` object.)
+             * This usually means the response is a `Todo` object.)
              * </em>
              */
             "find": {
               isArray: true,
-              url: urlBase + "/Clientes",
+              url: urlBase + "/Todos",
               method: "GET",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Clientes#findOne
-             * @methodOf lbServices.Clientes
+             * @name lbServices.Todo#findOne
+             * @methodOf lbServices.Todo
              *
              * @description
              *
@@ -1736,18 +1736,18 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Clientes` object.)
+             * This usually means the response is a `Todo` object.)
              * </em>
              */
             "findOne": {
-              url: urlBase + "/Clientes/findOne",
+              url: urlBase + "/Todos/findOne",
               method: "GET",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Clientes#updateAll
-             * @methodOf lbServices.Clientes
+             * @name lbServices.Todo#updateAll
+             * @methodOf lbServices.Todo
              *
              * @description
              *
@@ -1774,14 +1774,14 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * Information related to the outcome of the operation
              */
             "updateAll": {
-              url: urlBase + "/Clientes/update",
+              url: urlBase + "/Todos/update",
               method: "POST",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Clientes#deleteById
-             * @methodOf lbServices.Clientes
+             * @name lbServices.Todo#deleteById
+             * @methodOf lbServices.Todo
              *
              * @description
              *
@@ -1803,18 +1803,18 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Clientes` object.)
+             * This usually means the response is a `Todo` object.)
              * </em>
              */
             "deleteById": {
-              url: urlBase + "/Clientes/:id",
+              url: urlBase + "/Todos/:id",
               method: "DELETE",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Clientes#count
-             * @methodOf lbServices.Clientes
+             * @name lbServices.Todo#count
+             * @methodOf lbServices.Todo
              *
              * @description
              *
@@ -1839,14 +1839,14 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *  - `count` – `{number=}` -
              */
             "count": {
-              url: urlBase + "/Clientes/count",
+              url: urlBase + "/Todos/count",
               method: "GET",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Clientes#prototype$updateAttributes
-             * @methodOf lbServices.Clientes
+             * @name lbServices.Todo#prototype$updateAttributes
+             * @methodOf lbServices.Todo
              *
              * @description
              *
@@ -1854,7 +1854,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - Clientes id
+             *  - `id` – `{*}` - Todo id
              *
              * @param {Object} postData Request data.
              *
@@ -1872,18 +1872,18 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Clientes` object.)
+             * This usually means the response is a `Todo` object.)
              * </em>
              */
             "prototype$updateAttributes": {
-              url: urlBase + "/Clientes/:id",
+              url: urlBase + "/Todos/:id",
               method: "PUT",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Clientes#createChangeStream
-             * @methodOf lbServices.Clientes
+             * @name lbServices.Todo#createChangeStream
+             * @methodOf lbServices.Todo
              *
              * @description
              *
@@ -1913,7 +1913,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *  - `changes` – `{ReadableStream=}` -
              */
             "createChangeStream": {
-              url: urlBase + "/Clientes/change-stream",
+              url: urlBase + "/Todos/change-stream",
               method: "POST",
             },
           }
@@ -1923,8 +1923,8 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
             /**
              * @ngdoc method
-             * @name lbServices.Clientes#patchOrCreate
-             * @methodOf lbServices.Clientes
+             * @name lbServices.Todo#patchOrCreate
+             * @methodOf lbServices.Todo
              *
              * @description
              *
@@ -1951,15 +1951,15 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Clientes` object.)
+             * This usually means the response is a `Todo` object.)
              * </em>
              */
         R["patchOrCreate"] = R["upsert"];
 
             /**
              * @ngdoc method
-             * @name lbServices.Clientes#updateOrCreate
-             * @methodOf lbServices.Clientes
+             * @name lbServices.Todo#updateOrCreate
+             * @methodOf lbServices.Todo
              *
              * @description
              *
@@ -1986,15 +1986,15 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Clientes` object.)
+             * This usually means the response is a `Todo` object.)
              * </em>
              */
         R["updateOrCreate"] = R["upsert"];
 
             /**
              * @ngdoc method
-             * @name lbServices.Clientes#patchOrCreateWithWhere
-             * @methodOf lbServices.Clientes
+             * @name lbServices.Todo#patchOrCreateWithWhere
+             * @methodOf lbServices.Todo
              *
              * @description
              *
@@ -2020,15 +2020,15 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Clientes` object.)
+             * This usually means the response is a `Todo` object.)
              * </em>
              */
         R["patchOrCreateWithWhere"] = R["upsertWithWhere"];
 
             /**
              * @ngdoc method
-             * @name lbServices.Clientes#update
-             * @methodOf lbServices.Clientes
+             * @name lbServices.Todo#update
+             * @methodOf lbServices.Todo
              *
              * @description
              *
@@ -2058,8 +2058,8 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
             /**
              * @ngdoc method
-             * @name lbServices.Clientes#destroyById
-             * @methodOf lbServices.Clientes
+             * @name lbServices.Todo#destroyById
+             * @methodOf lbServices.Todo
              *
              * @description
              *
@@ -2081,15 +2081,15 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Clientes` object.)
+             * This usually means the response is a `Todo` object.)
              * </em>
              */
         R["destroyById"] = R["deleteById"];
 
             /**
              * @ngdoc method
-             * @name lbServices.Clientes#removeById
-             * @methodOf lbServices.Clientes
+             * @name lbServices.Todo#removeById
+             * @methodOf lbServices.Todo
              *
              * @description
              *
@@ -2111,15 +2111,15 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Clientes` object.)
+             * This usually means the response is a `Todo` object.)
              * </em>
              */
         R["removeById"] = R["deleteById"];
 
             /**
              * @ngdoc method
-             * @name lbServices.Clientes#patchAttributes
-             * @methodOf lbServices.Clientes
+             * @name lbServices.Todo#patchAttributes
+             * @methodOf lbServices.Todo
              *
              * @description
              *
@@ -2127,7 +2127,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - Clientes id
+             *  - `id` – `{*}` - Todo id
              *
              * @param {Object} postData Request data.
              *
@@ -2145,7 +2145,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Clientes` object.)
+             * This usually means the response is a `Todo` object.)
              * </em>
              */
         R["patchAttributes"] = R["prototype$updateAttributes"];
@@ -2153,823 +2153,13 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
         /**
         * @ngdoc property
-        * @name lbServices.Clientes#modelName
-        * @propertyOf lbServices.Clientes
+        * @name lbServices.Todo#modelName
+        * @propertyOf lbServices.Todo
         * @description
         * The name of the model represented by this $resource,
-        * i.e. `Clientes`.
+        * i.e. `Todo`.
         */
-        R.modelName = "Clientes";
-
-
-
-        return R;
-      }]);
-
-/**
- * @ngdoc object
- * @name lbServices.Contato
- * @header lbServices.Contato
- * @object
- *
- * @description
- *
- * A $resource object for interacting with the `Contato` model.
- *
- * ## Example
- *
- * See
- * {@link http://docs.angularjs.org/api/ngResource.$resource#example $resource}
- * for an example of using this object.
- *
- */
-  module.factory(
-    "Contato",
-    [
-      'LoopBackResource', 'LoopBackAuth', '$injector', '$q',
-      function(LoopBackResource, LoopBackAuth, $injector, $q) {
-        var R = LoopBackResource(
-        urlBase + "/Contatos/:id",
-          { 'id': '@id' },
-          {
-
-            /**
-             * @ngdoc method
-             * @name lbServices.Contato#create
-             * @methodOf lbServices.Contato
-             *
-             * @description
-             *
-             * Create a new instance of the model and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Contato` object.)
-             * </em>
-             */
-            "create": {
-              url: urlBase + "/Contatos",
-              method: "POST",
-            },
-
-            /**
-             * @ngdoc method
-             * @name lbServices.Contato#createMany
-             * @methodOf lbServices.Contato
-             *
-             * @description
-             *
-             * Create a new instance of the model and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Array.<Object>,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Array.<Object>} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Contato` object.)
-             * </em>
-             */
-            "createMany": {
-              isArray: true,
-              url: urlBase + "/Contatos",
-              method: "POST",
-            },
-
-            /**
-             * @ngdoc method
-             * @name lbServices.Contato#upsert
-             * @methodOf lbServices.Contato
-             *
-             * @description
-             *
-             * Patch an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Contato` object.)
-             * </em>
-             */
-            "upsert": {
-              url: urlBase + "/Contatos",
-              method: "PUT",
-            },
-
-            /**
-             * @ngdoc method
-             * @name lbServices.Contato#replaceOrCreate
-             * @methodOf lbServices.Contato
-             *
-             * @description
-             *
-             * Replace an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Contato` object.)
-             * </em>
-             */
-            "replaceOrCreate": {
-              url: urlBase + "/Contatos/replaceOrCreate",
-              method: "POST",
-            },
-
-            /**
-             * @ngdoc method
-             * @name lbServices.Contato#upsertWithWhere
-             * @methodOf lbServices.Contato
-             *
-             * @description
-             *
-             * Update an existing model instance or insert a new one into the data source based on the where criteria.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `where` – `{object=}` - Criteria to match model instances
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Contato` object.)
-             * </em>
-             */
-            "upsertWithWhere": {
-              url: urlBase + "/Contatos/upsertWithWhere",
-              method: "POST",
-            },
-
-            /**
-             * @ngdoc method
-             * @name lbServices.Contato#exists
-             * @methodOf lbServices.Contato
-             *
-             * @description
-             *
-             * Check whether a model instance exists in the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - Model id
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * Data properties:
-             *
-             *  - `exists` – `{boolean=}` -
-             */
-            "exists": {
-              url: urlBase + "/Contatos/:id/exists",
-              method: "GET",
-            },
-
-            /**
-             * @ngdoc method
-             * @name lbServices.Contato#findById
-             * @methodOf lbServices.Contato
-             *
-             * @description
-             *
-             * Find a model instance by {{id}} from the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - Model id
-             *
-             *  - `filter` – `{object=}` - Filter defining fields and include - must be a JSON-encoded string ({"something":"value"})
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Contato` object.)
-             * </em>
-             */
-            "findById": {
-              url: urlBase + "/Contatos/:id",
-              method: "GET",
-            },
-
-            /**
-             * @ngdoc method
-             * @name lbServices.Contato#replaceById
-             * @methodOf lbServices.Contato
-             *
-             * @description
-             *
-             * Replace attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - Model id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Contato` object.)
-             * </em>
-             */
-            "replaceById": {
-              url: urlBase + "/Contatos/:id/replace",
-              method: "POST",
-            },
-
-            /**
-             * @ngdoc method
-             * @name lbServices.Contato#find
-             * @methodOf lbServices.Contato
-             *
-             * @description
-             *
-             * Find all instances of the model matched by filter from the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `filter` – `{object=}` - Filter defining fields, where, include, order, offset, and limit - must be a JSON-encoded string ({"something":"value"})
-             *
-             * @param {function(Array.<Object>,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Array.<Object>} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Contato` object.)
-             * </em>
-             */
-            "find": {
-              isArray: true,
-              url: urlBase + "/Contatos",
-              method: "GET",
-            },
-
-            /**
-             * @ngdoc method
-             * @name lbServices.Contato#findOne
-             * @methodOf lbServices.Contato
-             *
-             * @description
-             *
-             * Find first instance of the model matched by filter from the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `filter` – `{object=}` - Filter defining fields, where, include, order, offset, and limit - must be a JSON-encoded string ({"something":"value"})
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Contato` object.)
-             * </em>
-             */
-            "findOne": {
-              url: urlBase + "/Contatos/findOne",
-              method: "GET",
-            },
-
-            /**
-             * @ngdoc method
-             * @name lbServices.Contato#updateAll
-             * @methodOf lbServices.Contato
-             *
-             * @description
-             *
-             * Update instances of the model matched by {{where}} from the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `where` – `{object=}` - Criteria to match model instances
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * Information related to the outcome of the operation
-             */
-            "updateAll": {
-              url: urlBase + "/Contatos/update",
-              method: "POST",
-            },
-
-            /**
-             * @ngdoc method
-             * @name lbServices.Contato#deleteById
-             * @methodOf lbServices.Contato
-             *
-             * @description
-             *
-             * Delete a model instance by {{id}} from the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - Model id
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Contato` object.)
-             * </em>
-             */
-            "deleteById": {
-              url: urlBase + "/Contatos/:id",
-              method: "DELETE",
-            },
-
-            /**
-             * @ngdoc method
-             * @name lbServices.Contato#count
-             * @methodOf lbServices.Contato
-             *
-             * @description
-             *
-             * Count instances of the model matched by where from the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `where` – `{object=}` - Criteria to match model instances
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * Data properties:
-             *
-             *  - `count` – `{number=}` -
-             */
-            "count": {
-              url: urlBase + "/Contatos/count",
-              method: "GET",
-            },
-
-            /**
-             * @ngdoc method
-             * @name lbServices.Contato#prototype$updateAttributes
-             * @methodOf lbServices.Contato
-             *
-             * @description
-             *
-             * Patch attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - Contato id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Contato` object.)
-             * </em>
-             */
-            "prototype$updateAttributes": {
-              url: urlBase + "/Contatos/:id",
-              method: "PUT",
-            },
-
-            /**
-             * @ngdoc method
-             * @name lbServices.Contato#createChangeStream
-             * @methodOf lbServices.Contato
-             *
-             * @description
-             *
-             * Create a change stream.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             *  - `options` – `{object=}` -
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * Data properties:
-             *
-             *  - `changes` – `{ReadableStream=}` -
-             */
-            "createChangeStream": {
-              url: urlBase + "/Contatos/change-stream",
-              method: "POST",
-            },
-          }
-        );
-
-
-
-            /**
-             * @ngdoc method
-             * @name lbServices.Contato#patchOrCreate
-             * @methodOf lbServices.Contato
-             *
-             * @description
-             *
-             * Patch an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Contato` object.)
-             * </em>
-             */
-        R["patchOrCreate"] = R["upsert"];
-
-            /**
-             * @ngdoc method
-             * @name lbServices.Contato#updateOrCreate
-             * @methodOf lbServices.Contato
-             *
-             * @description
-             *
-             * Patch an existing model instance or insert a new one into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *   This method does not accept any parameters.
-             *   Supply an empty object or omit this argument altogether.
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Contato` object.)
-             * </em>
-             */
-        R["updateOrCreate"] = R["upsert"];
-
-            /**
-             * @ngdoc method
-             * @name lbServices.Contato#patchOrCreateWithWhere
-             * @methodOf lbServices.Contato
-             *
-             * @description
-             *
-             * Update an existing model instance or insert a new one into the data source based on the where criteria.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `where` – `{object=}` - Criteria to match model instances
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Contato` object.)
-             * </em>
-             */
-        R["patchOrCreateWithWhere"] = R["upsertWithWhere"];
-
-            /**
-             * @ngdoc method
-             * @name lbServices.Contato#update
-             * @methodOf lbServices.Contato
-             *
-             * @description
-             *
-             * Update instances of the model matched by {{where}} from the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `where` – `{object=}` - Criteria to match model instances
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * Information related to the outcome of the operation
-             */
-        R["update"] = R["updateAll"];
-
-            /**
-             * @ngdoc method
-             * @name lbServices.Contato#destroyById
-             * @methodOf lbServices.Contato
-             *
-             * @description
-             *
-             * Delete a model instance by {{id}} from the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - Model id
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Contato` object.)
-             * </em>
-             */
-        R["destroyById"] = R["deleteById"];
-
-            /**
-             * @ngdoc method
-             * @name lbServices.Contato#removeById
-             * @methodOf lbServices.Contato
-             *
-             * @description
-             *
-             * Delete a model instance by {{id}} from the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - Model id
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Contato` object.)
-             * </em>
-             */
-        R["removeById"] = R["deleteById"];
-
-            /**
-             * @ngdoc method
-             * @name lbServices.Contato#patchAttributes
-             * @methodOf lbServices.Contato
-             *
-             * @description
-             *
-             * Patch attributes for a model instance and persist it into the data source.
-             *
-             * @param {Object=} parameters Request parameters.
-             *
-             *  - `id` – `{*}` - Contato id
-             *
-             * @param {Object} postData Request data.
-             *
-             * This method expects a subset of model properties as request parameters.
-             *
-             * @param {function(Object,Object)=} successCb
-             *   Success callback with two arguments: `value`, `responseHeaders`.
-             *
-             * @param {function(Object)=} errorCb Error callback with one argument:
-             *   `httpResponse`.
-             *
-             * @returns {Object} An empty reference that will be
-             *   populated with the actual data once the response is returned
-             *   from the server.
-             *
-             * <em>
-             * (The remote method definition does not provide any description.
-             * This usually means the response is a `Contato` object.)
-             * </em>
-             */
-        R["patchAttributes"] = R["prototype$updateAttributes"];
-
-
-        /**
-        * @ngdoc property
-        * @name lbServices.Contato#modelName
-        * @propertyOf lbServices.Contato
-        * @description
-        * The name of the model represented by this $resource,
-        * i.e. `Contato`.
-        */
-        R.modelName = "Contato";
+        R.modelName = "Todo";
 
 
 

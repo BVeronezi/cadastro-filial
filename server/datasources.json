@@ -7,7 +7,7 @@
     "host": "localhost",
     "port": 5432,
     "database": "DataCadastro",
-    "password": "senha",
+    "password": "123",
     "name": "DataCadastro",
     "user": "postgres",
     "connector": "postgresql"

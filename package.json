@@ -11,6 +11,10 @@
     "posttest": "npm run lint && nsp check"
   },
   "dependencies": {
+    "@angular/animations": "^7.1.0",
+    "@angular/cdk": "^7.1.0",
+    "@angular/material": "^7.1.0",
+    "babel-runtime": "^6.26.0",
     "compression": "^1.0.3",
     "cors": "^2.5.2",
     "helmet": "^3.11.0",
@@ -18,13 +22,14 @@
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^5.4.0",
     "loopback-connector-postgresql": "^3.5.0",
-    "loopback-datasource-juggler": "^2.39.0",
+    "loopback-datasource-juggler": "^2.58.1",
     "serve-favicon": "^2.0.1",
     "strong-error-handler": "^2.0.0"
   },
   "devDependencies": {
     "eslint": "^3.17.1",
     "eslint-config-loopback": "^8.0.0",
+    "grunt-loopback-sdk-angular": "^3.2.0",
     "nsp": "^2.1.0"
   },
   "repository": {
