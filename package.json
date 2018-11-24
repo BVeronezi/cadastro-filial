@@ -15,6 +15,7 @@
     "@angular/cdk": "^7.1.0",
     "@angular/material": "^7.1.0",
     "babel-runtime": "^6.26.0",
+    "busca-cep": "^0.5.0",
     "compression": "^1.0.3",
     "cors": "^2.5.2",
     "helmet": "^3.11.0",

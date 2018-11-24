@@ -24,4 +24,16 @@ angular
           getTodos();
         });
     };
+
+    $scope.buscarCEP = function(){
+      var urlWebService = "https://viacep.com.br/ws/";
+      var cep = $scope.cep;
+      
+      uri = urlWebService + cep;
+      $http.get(uri).sucess(function(data, status){
+        $scope.cep = data.logradouro + ' ' + 
+          data.logradouro + ', ' + data.bairro + ', ' + 
+          data.cidade + '' + ' - '+ data.uf;
+      }).error(function(){alert("Ocorreu um erro ao pesquisar o CEP")})};
+    
   }]);

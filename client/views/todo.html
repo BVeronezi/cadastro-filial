@@ -1,118 +1,122 @@
 <div class="form-style-10">
-    <div class="form-basic">
-       <div class="section">Cadastro de Filial</div>
-       <hr>
-    <form name="todoForm" novalidate ng-submit="addTodo()">
-      <label class="form-check-label">Cadastrar Filial como pessoa:</label>
-      <div class="row">
-         <div class="col-sm-1">
-         <input type="checkbox" ng-model="newTodo.tipope" ng-true-value="'F'" ng-value="vm.a"/> Física
-        </div>  
-         <div class="col-sm-2">
-         <input type="checkbox" ng-model="newTodo.tipope" ng-true-value="'J'" ng-value="vm.b"/> Jurídica
-        </div>
-    </div>
- <div *ng-if='ng-value=J'>
-    <div class="row">
-            <div class="col-4">
-                    <div class="input-group">
-                            <input type="text" class="form-control input" name="cnpj" placeholder="CNPJ" required ng-model="newTodo.cnpj">
-                            <span class="input-group-btn">
-                            <button class="btn btn-info">Buscar</button>
-                            <span class="glyphicon glyphicon-search"></span></button>
-             </div>
-          </div>
-            <div class="col-sm-6">
-        <input type="text" class="form-control input" name="razaoNome" placeholder="Razão Social*" ng-model="newTodo.razaoNome">
+        <div class="form-basic">
+           <div class="section">Cadastro de Filial</div>
+           <hr>
+        <form name="todoForm" novalidate ng-submit="addTodo()">
+          <label class="form-check-label">Cadastrar Filial como pessoa:</label>
+          <div class="row">
+             <div class="col-sm-1">
+             <input type="checkbox" ng-model="newTodo.tipope" ng-true-value="'F'" ng-value="vm.a"/> Física
+            </div>  
+             <div class="col-sm-2">
+             <input type="checkbox" ng-model="newTodo.tipope" ng-true-value="'J'" ng-value="vm.b"/> Jurídica
             </div>
-            <div class="col-sm-6">
-        <input type="text" class="form-control input" name="nomeFantasia" placeholder="Nome Fantasia*" ng-model="newTodo.nomeFantasia">
-            </div>
-            <div class="col-sm-6">
-        <input type="text" class="form-control input" name="nomeResumido" placeholder="Nome Resumido*" ng-model="newTodo.nomeResumido">
         </div>
-        <div class="col-sm-6">
-        <input type="text" class="form-control input" name="inscest" placeholder="Inscrição Estadual" ng-model="newTodo.inscest">
-        </div>
-        <div class="col-sm-6">
-        <input type="text" class="form-control input" name="inscmun" placeholder="Inscrição Municipal" ng-model="newTodo.inscmun">
-        </div>
-        <div class="col-sm-6">
-        <input type="text" class="form-control input" name="regimeFiscal" placeholder="Regime Fiscal" ng-model="newTodo.regimeFiscal">
-        </div>
-        <div class="col-sm-6">
-        <input type="text" class="form-control input" name="suframa" placeholder="Suframa"  ng-model="newTodo.suframa">
-    </div>
-</div>
-</div>
-        <p>
-    <div class="section">Endereço</div>
-    <div class="row">
-            <div class="col-sm-6">
-        <div class="input-group">
-        <input type="text" class="form-control input" name="cep" placeholder="CEP" ng-model="newTodo.cep">
-             <span class="input-group-btn">
-             <button type="submit"class="btn btn-info">Consultar
-             <span class="glyphicon glyphicon-search"></span></button>
-            </div>
-            </div>
-            <div class="col-sm-6">
-        <input type="text" class="form-control input" name="logradouro" placeholder="Logradouro" ng-model="newTodo.logradouro">
-            </div>
-            <div class="col-sm-6">
-        <input type="text" class="form-control input" name="endereco" placeholder="Endereço" ng-model="newTodo.endereco">
-        </div>
-        <div class="col-sm-6">
-                <input type="text" class="form-control input" name="numero" placeholder="Nº" ng-model="newTodo.numero">
-         </div>
-         <div class="col-sm-6">
-                <input type="text" class="form-control input" name="complemento" placeholder="Complemento" ng-model="newTodo.v">
-         </div>
-         <div class="col-sm-6">
-                <input type="text" class="form-control input" name="uf" placeholder="Estado" ng-model="newTodo.uf">
-         </div>
-         <div class="col-sm-6">
-                <input type="text" class="form-control input" name="cidade" placeholder="Cidade" ng-model="newTodo.cidade">
-         </div>
-    </div>
-    <p>
-    <form>
-            <div class="section">Contato</div>
-            <div class="row">
-                    <div class="col-sm-6">
-                <input type="text" class="form-control input" name="telefone" placeholder="Telefone" ng-model="newTodo.telefone">
-                    </div>
-                    <div class="col-sm-6">
-                <input type="text" class="form-control input" name="celular" placeholder="Celular" ng-model="newTodo.celular">
-                    </div>
-                    <div class="col-sm-6">
-                <input type="text" class="form-control input" name="telComer" placeholder="Telefone Comercial" ng-model="newTodo.telComer">
+     <div *ng-if='ng-value=J'>
+        <div class="row">
+                <div class="col-4">
+                        <div class="input-group">
+                                <input type="text" class="form-control input" name="cnpj" placeholder="CNPJ" required ng-model="newTodo.cnpj">
+                                <span class="input-group-btn">
+                            <button type="button" class="btn btn-info">Buscar</button>
+                 </div>
+              </div>
+                <div class="col-sm-6">
+            <input type="text" class="form-control input" name="razaoNome" placeholder="Razão Social*" ng-model="newTodo.razaoNome">
                 </div>
                 <div class="col-sm-6">
-                        <input type="text" class="form-control input" name="email" placeholder="E-mail" ng-model="newTodo.email">
-                 </div>
-                 <div class="col-sm-6">
-                        <input type="text" class="form-control input" name="contato" placeholder="Contato" ng-model="newTodo.contato">
-                 </div>
-                 <div class="col-sm-6">
-                        <input type="text" class="form-control input" name="siteEmpresa" placeholder="Site da Empresa" ng-model="newTodo.siteEmpresa">
-                 </div>
-            </div>
-     <p>
-            <div class="section">Sobre a loja</div>
-            <div class="row">
-                    <div class="col-sm-6">
-                <input type="text" class="form-control input" name="nCheck" placeholder="Nº de checkouts" ng-model="newTodo.nCheck">
-                    </div>
-                    <div class="col-sm-6">
-                <input type="text" class="form-control input" name="tamaLoja" placeholder="Tamanho da loja" ng-model="newTodo.tamaLoja">
-                    </div>
-                    <div class="col-sm-6">
-                <input type="text" class="form-control input" name="numFunc" placeholder="Número de funcionários" ng-model="newTodo.numFunc">
+            <input type="text" class="form-control input" name="nomeFantasia" placeholder="Nome Fantasia*" ng-model="newTodo.nomeFantasia">
                 </div>
+                <div class="col-sm-6">
+            <input type="text" class="form-control input" name="nomeResumido" placeholder="Nome Resumido (para exibição)" ng-model="newTodo.nomeResumido">
             </div>
-     <p>
-    <button class="btn btn-danger" ng-disabled="todoForm.$invalid">Cancelar</button>
-    <button class="btn btn-primary" ng-disabled="todoForm.$invalid">Salvar</button>
-     </div>
-    </form>
+            <div class="col-sm-6">
+            <input type="text" class="form-control input" name="inscest" placeholder="Inscrição Estadual (IE)" ng-model="newTodo.inscest">
+            </div>
+            <div class="col-sm-6">
+            <input type="text" class="form-control input" name="inscmun" placeholder="Inscrição Municipal (IM)" ng-model="newTodo.inscmun">
+            </div>
+            <div class="col-sm-6">
+            <input type="text" class="form-control input" name="regimeFiscal" placeholder="Regime Fiscal" ng-model="newTodo.regimeFiscal">
+            </div>
+            <div class="col-sm-6">
+            <input type="text" class="form-control input" name="suframa" placeholder="Suframa"  ng-model="newTodo.suframa">
+        </div>
+    </div>
+    </div>
+            <p>
+        <div class="section">Endereço</div>
+        <div class="row">
+                <div class="col-sm-6">
+            <div class="input-group">
+            <input type="text" class="form-control input" id="cep" name="cep" placeholder="CEP*" ng-model="newTodo.cep">
+                 <span class="input-group-btn">
+                 <button type="button" class="btn btn-info" ng-click="buscarCEP()">Consultar</button>
+                </div>
+                </div>
+                <div class="col-sm-6">
+            <input type="text" class="form-control input" name="logradouro" placeholder="Logradouro*" ng-model="newTodo.logradouro">
+                </div>
+                <div class="col-sm-6">
+            <input type="text" class="form-control input" name="endereco" placeholder="Endereço*" ng-model="newTodo.endereco">
+            </div>
+            <div class="col-sm-6">
+                    <input type="text" class="form-control input" name="numero" placeholder="Nº*" ng-model="newTodo.numero">
+             </div>
+             <div class="col-sm-6">
+                    <input type="text" class="form-control input" name="bairro" placeholder="Bairro*" ng-model="newTodo.bairro">
+             </div>
+             <div class="col-sm-6">
+                    <input type="text" class="form-control input" name="complemento" placeholder="Complemento" ng-model="newTodo.complemento">
+             </div>
+             <div class="col-sm-6">
+                    <input type="text" class="form-control input" name="pais" placeholder="País*" ng-model="newTodo.uf">
+             </div>
+             <div class="col-sm-6">
+                    <input type="text" class="form-control input" name="uf" placeholder="Estado*" ng-model="newTodo.uf">
+             </div>
+             <div class="col-sm-6">
+                    <input type="text" class="form-control input" name="cidade" placeholder="Cidade*" ng-model="newTodo.cidade">
+             </div>
+        </div>
+        <p>
+        <form>
+                <div class="section">Contato</div>
+                <div class="row">
+                        <div class="col-sm-6">
+                    <input type="text" class="form-control input" name="telefone" placeholder="Telefone" ng-model="newTodo.telefone">
+                        </div>
+                        <div class="col-sm-6">
+                    <input type="text" class="form-control input" name="celular" placeholder="Celular" ng-model="newTodo.celular">
+                        </div>
+                        <div class="col-sm-6">
+                    <input type="text" class="form-control input" name="telComer" placeholder="Telefone Comercial" ng-model="newTodo.telComer">
+                    </div>
+                    <div class="col-sm-6">
+                            <input type="text" class="form-control input" name="email" placeholder="E-mail" ng-model="newTodo.email">
+                     </div>
+                     <div class="col-sm-6">
+                            <input type="text" class="form-control input" name="contato" placeholder="Contato" ng-model="newTodo.contato">
+                     </div>
+                     <div class="col-sm-6">
+                            <input type="text" class="form-control input" name="siteEmpresa" placeholder="Site da Empresa" ng-model="newTodo.siteEmpresa">
+                     </div>
+                </div>
+         <p>
+                <div class="section">Sobre a loja</div>
+                <div class="row">
+                        <div class="col-sm-6">
+                    <input type="text" class="form-control input" name="nCheck" placeholder="Nº de checkouts" ng-model="newTodo.nCheck">
+                        </div>
+                        <div class="col-sm-6">
+                    <input type="text" class="form-control input" name="tamaLoja" placeholder="Tamanho da loja" ng-model="newTodo.tamaLoja">
+                        </div>
+                        <div class="col-sm-6">
+                    <input type="text" class="form-control input" name="numFunc" placeholder="Número de funcionários" ng-model="newTodo.numFunc">
+                    </div>
+                </div>
+         <p>
+        <button type="reset" class="btn btn-danger" ng-disabled="todoForm.$invalid">Cancelar</button>
+        <button class="btn btn-primary" ng-disabled="todoForm.$invalid">Salvar</button>
+         </div>
+        </form>
